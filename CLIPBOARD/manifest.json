@@ -1,0 +1,16 @@
+{
+    "manifest_version": 2,
+    "name": "Clipboard",
+    "version": "1.0",
+    "description": "A clipboard to store your notes.",
+    "background": {
+        "scripts": ["popup.js"]
+    },
+    "browser_action":{
+        "default_icon": "clipboard.png",
+        "default_popup": "popup.html"
+    },
+    "permissions": [
+        "storage"
+    ]
+}

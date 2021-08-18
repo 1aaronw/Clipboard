@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clipboard</title>
+    <style>
+    .saveBtn {
+	background-color:#44c767;
+	border:1px solid #18ab29;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:17px;
+	padding:9px 9px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #2f6627;
+    }
+    .saveBtn:hover {
+        background-color:#5cbf2a;
+    }
+    .saveBtn:active {
+        position:relative;
+        top:1px;
+    }
+    .clearBtn {
+	background-color:#e8101b;
+	border:1px solid #e8101b;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:17px;
+	padding:9px 9px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #000000;
+}
+    .clearBtn:hover {
+        background-color:#e8101b;
+    }
+    .clearBtn:active {
+        position:relative;
+        top:1px;
+    }    
+        html,body{
+            text-align: center;
+            width:400px;
+            height:400px;
+        }
+
+        input, label{
+            display: inline-block;
+            vertical-align: middle;
+            margin: 10px 0;
+            }
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Clipboard</h2>
+    </div>
+    <textarea id="output" name="output" placeholder="Type Here!" rows="20" cols="35"></textarea><br>
+    <button class="saveBtn" id="save"> Save</button>
+    <button class="clearBtn" id="clear">Clear</button>
+    <script src="popup.js"></script>
+</body>
+</html>
